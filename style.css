@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Inconsolata", monospace, Arial, Helvetica, sans-serif;
+
+}
+:root{
+    --azul-escuro: #4682b4;
+    --azul-claro: #87ceeb;
+
+    --cinza: #708090;
+
+    --background: #fffaf0;
+
+}
+ body {
+    background-color: var(--background);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--azul-escuro);
+} 
+li {
+    float: left;
+}
+.op {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-left: 9px;
+}
+.navnome{
+    padding: 0;
+    font-size: 20px;
+}
+li a {
+    display: block;
+    color: var(--background);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+.navbar{
+    display: block;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar:hover{
+    text-decoration: underline;
+}
+
+.meu-nome{
+    color: var(--azul-escuro);
+    display: inline-block;
+    margin-top: 12%;  
+    margin-left: 8%;
+}
+.texto{
+    overflow: hidden;
+    font-size: 3.6rem;
+    font-weight: 700;
+    border-right: 0.10em solid var(--azul-claro);
+    white-space: nowrap;
+    animation: typing 6s steps(40, end) infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.slogan{
+    color: var(--cinza);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 8%;
+}
+.sobre-mim{
+    padding-right: 50%;
+    margin-top: 10px;
+    margin-left: 8%;
+}
+.container{
+    margin-left: 8%;
+    margin-top: 20px;
+}
+.botao-bonito{
+
+    background-color: var(--azul-escuro);
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin: 30px;
+}
+.botao-bonito:hover{
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.botao{
+    text-decoration: none;
+    color: var(--background);
+}
+.foto-de-perfil{
+    float: right;
+    margin-right: 10%;
+    margin-top: 4%;
+}
+.fotominha {
+    width: 350px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    transition: 0.4s;
+    border-radius: 40%;
+}
+.fotominha:hover{
+    filter:grayscale(0%);
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 50px;
+    margin-top: 11%;
+    background-color: var(--cinza);
+    color: var(--background);
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* Aqui fica o CSS da Página sobre mim */ 
+
+.container-sobremim {
+    height: 100%;
+}
+.sobremim-titulo{
+    font-size: 50px;
+    color: var(--azul-escuro);
+    text-align: center;
+    padding-top: 4%;
+    position: relative;
+    margin-bottom: 0;
+}
+.sobremim-foto{
+    width: 40%;
+    display: inline-block;
+    font-size: 3vw;
+    text-align: center;
+    padding: 5vw 0vw 5vw 0vw;
+    min-width:40vw;
+    margin-top: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-bottom: 0;
+}
+.sobremim-foto img {
+    width: 65%;
+    border-radius: 8%;
+}
+.mapa{
+    float: right;
+    margin-right: 9%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.sobremim-grad{
+    width: 40%;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    min-width:40vw;
+    margin-top: 0;
+    
+}
+.sobremim-grad span{
+    color: orangered;
+}
+.sobremim-grad img{
+    padding-top: 0;
+    width: 30%;
+    border-radius: 8%;
+}
+.sobremim-grad h2{
+    color: var(--azul-escuro);
+}
+.sobremim-nome{
+    font-weight: bold;
+    width: 38%;
+    display: inline-block;
+    font-size: 3vw;
+    text-align: center;
+    min-width:40vw;
+    margin-top: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+ /* agora o css do projetos.*/ 
+.container-projetos{
+    height: 100%;
+}
+ .titulo-projetos{
+    font-size: 50px;
+    color: var(--azul-escuro);
+    text-align: center;
+    padding-top: 4%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.lista-projetos{
+    padding: 0;
+    margin: 0;
+}
+.lista-projetos-ul{
+    text-align: center;
+    background-color: var(--cinza);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    transition: 0.7s;
+}
+.lista-projetos-ul img{
+    width: 60%; 
+}
+.lista-projetos-ul h3{
+    color: var(--background);
+    font-weight: bold;
+    font-size: 85px;
+}
+.lista-projetos-ul p{
+    font-size: larger;
+}
+.lista-projetos-ul span{
+    color: var(--background);
+    font-weight: bold;
+}
+.lista-projetos-ul:hover{
+    background-color: var(--azul-escuro);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Agora a pagina de contato */
+
+.container-contato h2{
+    height: 100%;
+}
+.titulo-contato{
+    font-size: 50px;
+    color: var(--azul-escuro);
+    text-align: center;
+    padding-top: 4%;
+    position: relative;
+    margin-bottom: 1px;
+}
+.fotominha-contato{
+    margin-left: 38%;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 0;
+    width: 350px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    transition: 0.4s;
+    border-radius: 40%;
+}
+.foto-contato p{
+    text-align: center;
+    font-weight: bold;
+    color: var(--azul-escuro);
+    font-size: larger;
+
+}
+.iconesdecontato{
+    display: flex;
+    margin-left: 45%;
+}
+.iconescontato-op{
+    width: 30px;
+    padding: 20px;
+}
+
